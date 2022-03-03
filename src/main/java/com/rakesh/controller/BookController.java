@@ -16,7 +16,7 @@ import com.rakesh.request.Books;
 @RestController
 public class BookController {
 
-	@GetMapping(value = "/book",produces = {"application/xml","application/json"})
+	@GetMapping(value = "/book",produces = {"application/json"})
 	public ResponseEntity<Books> getBook(){
 		List<Book> list=new ArrayList<Book>();
 		list.add(new Book(1,"math","100"));
